@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+<meta charset="utf-8">
+<title>Aderlogik</title>
+<meta name="description" content="Place to put your description text">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/skeleton.css">
+<link rel="stylesheet" href="css/screen.css">
+<link rel="stylesheet" href="css/prettyPhoto.css" type="text/css" media="screen" />
+
+<link rel="shortcut icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
+
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>      
+    
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+      
+<div id="header">
+  <div class="container header"> 
+    <!-- Header | Logo, Menu
+		================================================== -->
+    <header>
+      <div class="logo"><a style="font-size: 41px;" href="index.html"></span>ADERLOGIK</a></div>
+      <div class="mainmenu">
+        <div id="mainmenu">
+          <ul class="sf-menu">
+            <li><a href="index.html" id="visited"><span class="home"><img src="/assets/home.png" alt="" /></span>Home</a></li>
+            <li><a href="about.html"><span class="home"><img src="/assets/about.png" alt="" /></span>About</a></li>
+            <li><a href="portfolio.html"><span class="home"><img src="/assets/portfolio.png" alt="" /></span>Portfolio</a>
+              <ul>
+                <li><a href="gallery.html">Portfolio Gallery</a></li>
+              </ul>
+            </li>
+            <li><a href="blog.html"><span class="home"><img src="/assets/blog.png" alt="" /></span>Blog</a>
+              <ul>
+                <li><a href="singleblog.html">Single Post</a></li>
+              </ul>
+            </li>
+            <li><a href="features.html"><span class="home"><img src="/assets/features.png" alt="" /></span>features</a></li>
+            <li><a href="contact.html"><span class="home"><img src="/assets/contact.png" alt="" /></span>Contact</a></li>
+          </ul>
+        </div>
+        
+        <!-- Responsive Menu -->
+        
+        <form id="responsive-menu" action="#" method="post">
+          <select>
+            <option value="">Navigation</option>
+            <option value="index.html">Home</option>
+            <option value="about.html">About</option>
+            <option value="portfolio.html">Portfolio</option>
+            <option value="gallery.html">Portfolio Gallery</option>
+            <option value="blog.html">Blog</option>
+            <option value="singleblog.html">Single Post</option>
+            <option value="features.html">Features</option>
+            <option value="contact.html">Contact</option>
+          </select>
+        </form>
+      </div>
+    </header>
+  </div>
+</div>      
+      
+    <%= yield %>
+      
+s     
+      
+  </body>
+</html>
