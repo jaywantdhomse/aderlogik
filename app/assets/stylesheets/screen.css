@@ -66,7 +66,7 @@ div.blankSeparator2 {
 /****************************** HOME - Content Part - Logo&Menu ******************************/
 /* Header - Logo & Menu */
 #header {
-	background:#bfd6e4;
+	background:#128BD0;
 	margin-top:0px;
 	border-bottom:1px solid #6d8696;
 }
@@ -146,20 +146,20 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	transition: all 0.5s ease-in-out;
 }
 .sf-menu li:hover { /* visited pseudo selector so IE6 applies text colour*/
-	background: rgba(215, 234, 238, 0.3);
-	border-top:2px solid #fff;
+	background: blue;
+/*	border-top:2px solid #fff;*/
 }
 .sf-menu li a {
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 13px;
 	padding:45px 15px 45px 15px;
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight:600;
-	color: #414558;
+	color: white;
 }
 li a#visited {
-	background: rgba(215, 234, 238, 0.3);
+	background: none;
 }
 /*** submenu ***/
 .sf-menu li ul {
@@ -458,7 +458,7 @@ a.simple {
 }
 /****************************** HOME - Content Part - Footer ******************************/
 #footer {
-	background:#626879;
+	background:darkslategray;
 	padding:20px 0px;
 	border-top:5px solid #bfd6e4;
 }
@@ -466,7 +466,9 @@ a.simple {
 	color:white;
 }
 .footer h3 {
-	color:#bfd6e4;
+	color: white;
+    font-size: 15px;
+    font-weight: bold;
 }
 #tweets li {
 	line-height: 1.5em;
@@ -493,10 +495,10 @@ a.simple {
 	color:#efefef;
 }
 .footer ul li {
-	color:#f1f2f2;
-	border-top:1px solid #787f94;
-	border-bottom:1px solid #494d5a;
-	padding:5px 0;
+	border-bottom: 1px solid #494d5a;
+    border-top: 1px solid grey;
+    color: white;
+    padding: 1px 0;
 }
 .footer ul li:last-child {
 	border-bottom:none;
@@ -519,7 +521,7 @@ a.simple {
 }
 /****************************** HOME - Content Part - Copyright ******************************/
 #copyright {
-	background:#727888;
+	background:darkslategray;
 	border-top:1px solid #414550;
 	border-bottom:5px solid #5c616f;
 }
@@ -1150,7 +1152,7 @@ ul.contactsidebarList a.about:hover {
 }
 ul.contactsidebarList li {
 	color:#414558;
-	padding: 10px 20px;
+	padding: 2px 5px;
 	border-bottom:1px solid #fff;
 	background: url(../images/raster.png) left no-repeat;
 }
@@ -1187,8 +1189,13 @@ span.color {
 .one_sixth {
 	width: 15%;
 }
-.one_half, .one_third, .two_third, .one_fourth, .one_fifth {
+.one_half, .one_third, .two_third, .one_fifth {
 	margin-right: 4%;
+	margin-bottom: 10px;
+	float: left;
+}
+.one_fourth{
+	margin-right: 17%;
 	margin-bottom: 10px;
 	float: left;
 }
