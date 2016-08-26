@@ -9,6 +9,9 @@ class HomeController < ApplicationController
   def why_aderlogik
   end
   
+  def portfolio
+  end
+  
   def services
   end
   
