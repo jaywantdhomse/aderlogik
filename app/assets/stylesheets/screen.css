@@ -416,7 +416,7 @@ span.green {
 }
 /****************************** HOME - Content Part - Box Three ******************************/
 .boxthree .one_third {
-	background:#e1e8ed;
+	background:lightskyblue;
 	box-shadow: 1px 1px 0px rgba(0, 0, 0, 0.1), 1px -1px 0px #efefef;
 	border-bottom:3px solid transparent;
 	-webkit-transition: all 0.3s ease;
