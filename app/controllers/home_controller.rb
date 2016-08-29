@@ -21,4 +21,10 @@ class HomeController < ApplicationController
   def contact_us
   end
   
+  def our_mission
+  end
+  
+  def our_vision
+  end
+  
 end

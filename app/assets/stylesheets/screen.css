@@ -163,8 +163,8 @@ li a#visited {
 }
 /*** submenu ***/
 .sf-menu li ul {
-	border-bottom:5px solid #bfd6e4;
-	margin-top:75px;
+	border-bottom:1px solid #bfd6e4;
+	margin-top:60px;
 }
 .sf-menu ul li { /* visited pseudo selector so IE6 applies text colour*/
 	border-top:none;
@@ -176,13 +176,12 @@ li a#visited {
 	padding:15px 0 15px 0;
 	text-decoration:none;
 	color:#fff;
-	background:#727888;
+	background:blue;
 	color: #fff;
 	border: 0;
 	padding:15px;
 	font-weight: normal;
 	font-size: 11px;
-	text-transform:lowercase;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;

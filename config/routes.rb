@@ -8,5 +8,8 @@ Rails.application.routes.draw do
   match "services" => "home#services", via: [:get, :post]
   match "technology" => "home#technology", via: [:get, :post]
   match "contact_us" => "home#contact_us", via: [:get, :post]
+  match "our_mission" => "home#our_mission", via: [:get, :post]
+  match "our_vision" => "home#our_vision", via: [:get, :post]
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
