@@ -19,6 +19,15 @@ class HomeController < ApplicationController
   end
   
   def contact_us
+    @contact = Contact.new
+  end
+  
+  def contacts
+    Rails.logger.debug params
+    contact = Contact.new
+    contact.eamil = params["contact"]["email"]
+    #contact.save
+    redirect_to contact_us_path
   end
   
   def our_mission

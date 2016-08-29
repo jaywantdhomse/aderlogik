@@ -10,6 +10,28 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160829174642) do
+
+  create_table "contacts", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "email"
+    t.string   "phone_no"
+    t.string   "company_name"
+    t.string   "industry_type"
+    t.string   "city"
+    t.string   "country"
+    t.string   "site_url"
+    t.string   "skype_id"
+    t.string   "gtalk"
+    t.string   "linkedin_url"
+    t.string   "twitter_url"
+    t.string   "service"
+    t.string   "rate"
+    t.string   "hear_about_us"
+    t.string   "budget"
+    t.datetime "created_at",    null: false
+    t.datetime "updated_at",    null: false
+  end
 
 end
