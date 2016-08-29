@@ -89,7 +89,9 @@
     </section>
   </div>
   <!-- one_third ends here -->
+  <%= form_for(@contact) do |f| %>
   <div class="two_third lastcolumn contact1">
+      
     <div id="contactForm">
       <h2>Leave a comment</h2>
       <div class="sepContainer"></div>
@@ -97,7 +99,7 @@
         <div class="name">
           <label for="name">Your Name:</label>
           <p> Please enter your full name</p>
-          <input id=name name=email type=text placeholder="e.g. Mr. John Smith" required />
+          <%= f.text_field "email", :size => 29, :class => "form-control input-sm", :placeholder => "e.g. Mr. John Smith" %>
         </div>
         <div class="email">
           <label for="email">Your Email:</label>
@@ -114,8 +116,10 @@
         </div>
       </form>
     </div>
+      
     <!-- end contactForm --> 
   </div>
+  <% end %>
 </div>
 <div class="blankSeparator2"></div>
 <!-- copyright ends here --> 
