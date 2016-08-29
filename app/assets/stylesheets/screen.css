@@ -7,7 +7,7 @@ img, embed, object, video {
 /* Deviders */
 div.line {
 	height: 6px;
-	background:url(../images/separator.png) 0 0 no-repeat;
+	background:url(/assets/separator.png) 0 0 no-repeat;
 	border-top:2px solid #cfa0d1;
 	display: block;
 	margin:0;
