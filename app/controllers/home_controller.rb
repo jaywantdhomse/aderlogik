@@ -25,7 +25,7 @@ class HomeController < ApplicationController
   def contacts
     Rails.logger.debug params
     contact = Contact.new
-    contact.eamil = params["contact"]["email"]
+    contact.email = params["contact"]["email"]
     #contact.save
     redirect_to contact_us_path
   end
