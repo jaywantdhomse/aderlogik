@@ -97,20 +97,74 @@
       <div class="sepContainer"></div>
       <form action="process.php" method="post" id="contact_form">
         <div class="name">
-          <label for="name">Your Name:</label>
-          <p> Please enter your full name</p>
-          <%= f.text_field "email", :size => 29, :class => "form-control input-sm", :placeholder => "e.g. Mr. John Smith" %>
+          <label for="name">First Name:</label>
+          <%= f.text_field "first_name", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your First Name" %>
         </div>
-        <div class="email">
-          <label for="email">Your Email:</label>
-          <p> Please enter your email address</p>
-          <input id=email name=email type=email placeholder="example@domain.com" required />
+        <div class="name">
+          <label for="email">Last Name:</label>
+          <%= f.text_field "last_name", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Last Name" %>
         </div>
-        <div class="message">
-          <label for="message">Your Message:</label>
-          <p> Please enter your message</p>
-          <textarea id=message name=message rows=6 cols=10 required></textarea>
+        <div class="name">
+          <label for="name">Email:</label>
+          <%= f.text_field "email", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Email" %>
         </div>
+        <div class="name">
+          <label for="name">Phone No:</label>
+          <%= f.text_field "phone_no", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Phone Number" %>
+        </div>
+        <div class="name">
+          <label for="name">Company Name:</label>
+          <%= f.text_field "company_name", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Company Name" %>
+        </div>
+        <div class="name">
+          <label for="name">Industry Type:</label>
+          <%= f.text_field "industry_type", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Industry Type" %>
+        </div>
+        <div class="name">
+          <label for="name">City:</label>
+          <%= f.text_field "city", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your City Name" %>
+        </div>
+        <div class="name">
+          <label for="name">Country:</label>
+          <%= f.text_field "country", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Country Name" %>
+        </div>
+        <div class="name">
+          <label for="name">Site URL:</label>
+          <%= f.text_field "site_url", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Website URL" %>
+        </div>
+        <div class="name">
+          <label for="name">Skype ID:</label>
+          <%= f.text_field "skype_id", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Skype ID" %>
+        </div>
+        <div class="name">
+          <label for="name">Gtalk:</label>
+          <%= f.text_field "gtalk", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Google Talk" %>
+        </div>
+        <div class="name">
+          <label for="name">Linkedin URL:</label>
+          <%= f.text_field "linkedin_url", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Linkedin URL" %>
+        </div>
+        <div class="name">
+          <label for="name">Twitter URL:</label>
+          <%= f.text_field "twitter_url", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Twitter URL" %>
+        </div>
+        <div class="name">
+          <label for="name">Required Services:</label>
+          <%= f.text_field "service", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Required Services" %>
+        </div>
+        <div class="name">
+          <label for="name">Rate:</label>
+          <%= f.text_field "rate", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Rate" %>
+        </div>
+        <div class="name">
+          <label for="name">How you have heared about us:</label>
+          <%= f.text_field "hear_about_us", :size => 29, :class => "form-control input-sm", :placeholder => "How you have heared about us" %>
+        </div>
+        <div class="name">
+          <label for="name">Budget:</label>
+          <%= f.text_field "budget", :size => 29, :class => "form-control input-sm", :placeholder => "Enter Your Budget" %>
+        </div>
+
         <div id="loader">
           <input type="submit" value="Submit" />
         </div>
@@ -122,6 +176,13 @@
   <% end %>
 </div>
 <div class="blankSeparator2"></div>
+
+<style>
+.name {
+    float: left;
+    padding-right: 90px;
+}
+</style>
 <!-- copyright ends here --> 
 <!-- End Document
 ================================================== --> 

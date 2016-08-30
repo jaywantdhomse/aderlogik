@@ -24,16 +24,27 @@ class HomeController < ApplicationController
   
   def contacts
     Rails.logger.debug params
-    contact = Contact.new
-    contact.email = params["contact"]["email"]
-    #contact.save
-    redirect_to contact_us_path
+    contact = Contact.new(contact_params)
+    first_name = params[:first_name]
+    last_name = params[:last_name]
+    email = params[:email]
+    contact.save
+    ContactMailer.contact_email(first_name, last_name, email).deliver
+    redirect_to contact_us_path, notice: 'Message sent'
   end
   
   def our_mission
   end
   
   def our_vision
+  end
+  
+  private
+
+  def contact_params
+    params.require(:contact).permit(:first_name, :last_name, :email, :phone_no, :company_name, :industry_name, 
+    :city, :country, :site_url, :skype_id, :gtalk, :linkedin_url, :twitter_url, :service, :rate, 
+    :hear_about_us, :budget)
   end
   
 end
