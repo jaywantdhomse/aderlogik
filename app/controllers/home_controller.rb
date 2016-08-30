@@ -25,10 +25,10 @@ class HomeController < ApplicationController
   def contacts
     Rails.logger.debug params
     contact = Contact.new(contact_params)
-    first_name = params[:first_name]
-    last_name = params[:last_name]
-    email = params[:email]
-    contact.save
+    first_name = params["contact"]["first_name"]
+    last_name = params["contact"]["last_name"]
+    email = params["contact"]["email"]
+#    contact.save
     ContactMailer.contact_email(first_name, last_name, email).deliver
     redirect_to contact_us_path, notice: 'Message sent'
   end
