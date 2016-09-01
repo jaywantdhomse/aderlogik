@@ -38,6 +38,24 @@ class HomeController < ApplicationController
   def our_vision
   end
   
+  def operating_system
+  end
+  
+  def web_program
+  end
+  
+  def mobile_tech
+  end
+  
+  def web_app_server
+  end
+  
+  def programing_lang
+  end
+  
+  def database
+  end
+  
   private
 
   def contact_params

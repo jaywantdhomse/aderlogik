@@ -12,5 +12,12 @@ Rails.application.routes.draw do
   match "our_vision" => "home#our_vision", via: [:get, :post]
   match "contacts" => "home#contacts", via: [:post]
   
+  match "operating_system" => "home#operating_system", via: [:get, :post]
+  match "web_program" => "home#web_program", via: [:get, :post]
+  match "mobile_tech" => "home#mobile_tech", via: [:get, :post]
+  match "web_app_server" => "home#web_app_server", via: [:get, :post]
+  match "programing_lang" => "home#programing_lang", via: [:get, :post]
+  match "database" => "home#database", via: [:get, :post]
+  
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
