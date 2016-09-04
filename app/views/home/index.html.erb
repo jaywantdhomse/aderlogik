@@ -1,31 +1,27 @@
 <!-- Home Content Part - Box One ==================================================
 ================================================== -->
+<!--<div class="flexslider">
+  <ul class="slides">
+    <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;"> 
+        <a href="#"><img style="width: 100%;" src="/assets/homepage.png" alt=""></a>
+    </li>
+  </ul>
+</div>-->
+
 <div class="flexslider">
   <ul class="slides">
-    <li class="flex-active-slide" style="width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;"> <a href="#"><img style="width: 100%;" src="/assets/homepage.png" alt=""></a>
+    <li> <a href="#"><img src="/assets/flexslider/6.jpg" alt=""/></a> </li>
+    <li> <img style="width: 100%;" src="/assets/flixslider/6.jpg" alt=""> </li>
+    <li> <a href="#"><img src="/assets/flexslider/6.jpg" alt="" /></a>
+      <p class="flex-caption">Welcome to Proximet Site. This is example of the Caption Title.</p>
     </li>
   </ul>
 </div>
-<!-- container ends here -->
 
-<script src="js/jquery-1.8.0.min.js" type="text/javascript"></script> 
-<!-- Main js files --> 
-<script src="js/screen.js" type="text/javascript"></script>
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script> 
-<!-- Tooltip --> 
-<script src="js/poshytip-1.0/src/jquery.poshytip.min.js" type="text/javascript"></script> 
-<!-- Tabs --> 
-<script src="js/tabs.js" type="text/javascript"></script> 
-<!-- Tweets --> 
-<script src="js/jquery.tweetable.js" type="text/javascript"></script> 
-<!-- Include prettyPhoto --> 
-<script src="js/jquery.prettyPhoto.js" type="text/javascript"></script> 
-<!-- Include Superfish --> 
-<script src="js/superfish.js" type="text/javascript"></script> 
-<script src="js/hoverIntent.js" type="text/javascript"></script> 
-<!-- Flexslider --> 
-<script src="js/jquery.flexslider-min.js" type="text/javascript"></script> 
-<script type="text/javascript" src="js/modernizr.custom.29473.js"></script>
-</head>
-</body>
-</html>
+<script>
+$(document).on('load turbolinks:load', function () {
+  $('.flexslider').flexslider({
+    animation: "slide"
+  });
+});  
+</script>
