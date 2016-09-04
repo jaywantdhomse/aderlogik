@@ -10,10 +10,9 @@
 
 <div class="flexslider">
   <ul class="slides">
-    <li> <a href="#"><img src="/assets/flexslider/6.jpg" alt=""/></a> </li>
-    <li> <img style="width: 100%;" src="/assets/flixslider/6.jpg" alt=""> </li>
-    <li> <a href="#"><img src="/assets/flexslider/6.jpg" alt="" /></a>
-      <p class="flex-caption">Welcome to Proximet Site. This is example of the Caption Title.</p>
+    <li> <a href="#"><img src="/assets/slider2.png" alt=""/></a> </li>
+    <li> <img style="width: 100%;" src="/assets/slider1.png" alt=""> </li>
+    <li> <a href="#"><img src="/assets/slider3.png" alt="" /></a>
     </li>
   </ul>
 </div>
@@ -21,7 +20,8 @@
 <script>
 $(document).on('load turbolinks:load', function () {
   $('.flexslider').flexslider({
-    animation: "slide"
+    animation: "fade",
+    animationLoop: true
   });
 });  
 </script>

@@ -66,7 +66,7 @@ div.blankSeparator2 {
 /****************************** HOME - Content Part - Logo&Menu ******************************/
 /* Header - Logo & Menu */
 #header {
-	background:#128BD0;
+	background:white;
 	margin-top:0px;
 	border-bottom:1px solid #6d8696;
 }
@@ -146,17 +146,20 @@ ul.sf-menu li li li:hover ul, ul.sf-menu li li li.sfHover ul {
 	transition: all 0.5s ease-in-out;
 }
 .sf-menu li:hover { /* visited pseudo selector so IE6 applies text colour*/
-	background: blue;
+	background: #1770A1;
 /*	border-top:2px solid #fff;*/
+}
+.sf-menu li a:hover { /* visited pseudo selector so IE6 applies text colour*/
+	color: white;
 }
 .sf-menu li a {
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 13px;
-	padding:45px 15px 45px 15px;
+	padding:45px 13px 45px 15px;
 	text-decoration:none;
 	text-transform:uppercase;
 	font-weight:600;
-	color: white;
+	color: #186FA2;
 }
 li a#visited {
 	background: none;
@@ -176,7 +179,7 @@ li a#visited {
 	padding:15px 0 15px 0;
 	text-decoration:none;
 	color:#fff;
-	background:blue;
+	background:#1770A1;
 	color: #fff;
 	border: 0;
 	padding:15px;
@@ -457,7 +460,7 @@ a.simple {
 }
 /****************************** HOME - Content Part - Footer ******************************/
 #footer {
-	background:darkslategray;
+	background:#1770A1;
 	padding:20px 0px;
 	border-top:5px solid #bfd6e4;
 }
@@ -520,7 +523,7 @@ a.simple {
 }
 /****************************** HOME - Content Part - Copyright ******************************/
 #copyright {
-	background:darkslategray;
+	background:#1770A1;
 	border-top:1px solid #414550;
 	border-bottom:5px solid #5c616f;
 }
