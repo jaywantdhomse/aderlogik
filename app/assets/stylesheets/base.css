@@ -108,12 +108,14 @@ h6 {
 	color: #414558;
 }
 p {
-	color: black;
-	line-height:1.5em;
-	font-size:15px;
-	margin: 0 0 0 0;
-	font-family: 'PT Serif', serif;
-	padding-top: 0px;
+	color: lightslategrey;
+    font-family: "PT Serif",serif;
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1.5em;
+    margin: 0;
+    padding-top: 0;
+    text-align: center;
 }
 p.last {
 	margin-bottom:0;
@@ -295,17 +297,15 @@ label span, legend span {
 	color: #444;
 }
 input[type="text"], input[type="password"], input[type="email"], textarea, select {
-	padding: 10px 10px;
-	outline: none;
-	overflow: hidden;
-	font: 12px Arial, Helvetica, sans-serif;
-	color: #414558;
-	margin: 0;
-	width: 198px;
-	max-width: 100%;
-	display: block;
-	margin-bottom: 10px;
-	background: #eee;
+	background: #eee none repeat scroll 0 0;
+    color: #414558;
+    display: block;
+    font: 12px Arial,Helvetica,sans-serif;
+    margin: 0 0 15px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 19px;
+    width: 360px;
 }
 select {
 	padding: 0;
