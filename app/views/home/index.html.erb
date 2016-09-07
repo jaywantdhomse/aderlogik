@@ -10,9 +10,9 @@
 
 <div class="flexslider">
   <ul class="slides">
-    <li> <a href="#"><img src="/assets/slider2.png" alt=""/></a> </li>
-    <li> <img style="width: 100%;" src="/assets/slider1.png" alt=""> </li>
-    <li> <a href="#"><img src="/assets/slider3.png" alt="" /></a>
+    <li> <a href="#"><img src="/assets/slider3.png" alt=""/></a> </li>
+    <li> <img style="width: 100%;" src="/assets/slider2.png" alt=""> </li>
+    <li> <a href="#"><img src="/assets/slider1.png" alt="" /></a>
     </li>
   </ul>
 </div>
@@ -21,7 +21,8 @@
 $(document).on('load turbolinks:load', function () {
   $('.flexslider').flexslider({
     animation: "fade",
-    animationLoop: true
+    animationLoop: true,
+    slideshowSpeed: 2000
   });
 });  
 </script>
