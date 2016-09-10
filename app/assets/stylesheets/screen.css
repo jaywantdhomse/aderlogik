@@ -21,7 +21,6 @@ img, embed, object, video {
       -ms-transform: rotate(-360deg);
           transform: rotate(-360deg);
 }
-}
 
 /* Deviders */
 div.line {
