@@ -94,3 +94,39 @@
 }
 </style>
 
+<script>
+$(document).on('load turbolinks:load', function () {
+  $('#new_contact').submit(function(e){
+    var is_form_submit = true;
+    
+    var first_name = $("#contact_first_name");
+    if(first_name.val() == ""){
+      is_form_submit = false;
+      first_name.css({"border": "2px solid red"});
+    }
+    
+    var last_name = $("#contact_last_name");   
+    if(last_name.val() == ""){
+      is_form_submit = false;
+      last_name.css({"border": "2px solid red"});
+    }
+    
+    var email = $("#contact_email");   
+    if(email.val() == ""){
+      is_form_submit = false;
+      email.css({"border": "2px solid red"});
+    }    
+    
+    var phone_no = $("#contact_phone_no");   
+    if(phone_no.val() == ""){
+      is_form_submit = false;
+      phone_no.css({"border": "2px solid red"});
+    }      
+    
+    if(!is_form_submit){
+      return false;
+    }
+    
+  })
+});  
+</script>
