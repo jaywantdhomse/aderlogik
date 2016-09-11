@@ -333,7 +333,7 @@ html[xmlns] .slides {
 	height: 52px;
 	margin: -15px 0 0;
 	display: block;
-	background:  url(/assets/flexslider/bg_direction_nav.png) no-repeat;
+	background:  url(/assets/bg_direction_nav.png) no-repeat;
 	position: absolute;
 	top: 50%;
 	cursor: pointer;
@@ -583,7 +583,7 @@ ul.socials li {
 	padding: 10px 10px 10px 25px;
 	cursor: pointer;
 	border: 1px solid #b7c7d1;
-	background: #dae4ea url(/assets/about/toggle.png) no-repeat 5px 10px;
+	background: #dae4ea url(/assets/toggle.png) no-repeat 5px 10px;
 	-webkit-transition: all 0.3s ease;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
@@ -592,7 +592,7 @@ ul.socials li {
 }
 .toggle-trigger.active {
 	border-bottom:1px solid #b7c7d1;
-	background:#bfd6e4 url(/assets/about/toggle.png) no-repeat 5px -75px;
+	background:#bfd6e4 url(/assets/toggle.png) no-repeat 5px -75px;
 }
 .toggle-trigger:hover {
 	background-color:#bfd6e4;
@@ -941,7 +941,7 @@ span.color {
 	margin-bottom:10px;
 	margin-top:0px;
 	border:1px solid #dcdcdc;
-	background:#efefef url(../images/blog.png) 97% center no-repeat;
+	background:#efefef url(/assets/blog.png) 97% center no-repeat;
 	padding:5px 0px 20px 10px;
 	color:#414550;
 }
@@ -1174,7 +1174,7 @@ ul.contactsidebarList li {
 	color:#414558;
 	padding: 2px 5px;
 	border-bottom:1px solid #fff;
-	background: url(../images/raster.png) left no-repeat;
+	background: url(/assets/raster.png) left no-repeat;
 }
 .second, .third {
 	margin-top:30px;
