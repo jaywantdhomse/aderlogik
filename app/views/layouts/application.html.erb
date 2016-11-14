@@ -13,7 +13,12 @@
 <link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
 <link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
 
-<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>      
+<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href="/assets/style.css" rel="stylesheet">
+<link href="/assets/bootstrap.css" rel="stylesheet">
+<link href="/assets/animate.css" rel="stylesheet">
+<link href="/assets/owl.carousel.css" rel="stylesheet">
+<link href="/assets/owl.theme.css" rel="stylesheet">
     
     <%= csrf_meta_tags %>
 
@@ -22,118 +27,118 @@
   </head>
 
   <body>
-      
-<div id="header">
-  <div class="container header"> 
-    <!-- Header | Logo, Menu
-		================================================== -->
-    <header>
-      <div class="logo">
-      	<a style="font-size: 20px; color: white;" href="index"><img src="/assets/logo100x85.png" alt="" /></a>
-  	  </div>
-      <div class="mainmenu">
-        <div id="mainmenu">
-          <ul class="sf-menu">
-            <li><a href="index" id="visited"><span class="home"></span>Homes</a></li>
-            <li><a><span class="home"></span>About</a>
-              <ul>
-                <li><a href="about_us">About Us</a></li>
-                <li><a href="our_mission">Our Mission</a></li>
-                <li><a href="our_vision">Our Vision</a></li>
-              </ul>
-            </li>
-            
-            <li><a href="why_aderlogik"><span class="home"></span>Why Aderlogik</a></li>
-            <li><a href="portfolio"><span class="home"></span>Portfolio</a></li>
-            <li><a href="services"><span class="home"></span>Services</a></li>
-            <li><a href="technology"><span class="home"></span>Technology</a>
-<!--            	<ul style="width: 14em;">-->
-<!--            		<li><a href="operating_system">Operating Systems</a></li>-->
-<!--		            <li><a href="web_program">Web Programming</a></li>-->
-<!--		            <li><a href="mobile_tech">Mobile Technologies</a></li>-->
-<!--		            <li><a href="web_app_server">Web/App Servers</a></li>-->
-<!--		            <li><a href="programing_lang">Programming Languages</a></li>-->
-<!--		            <li><a href="database">Databases</a></li>-->
-<!--              </ul>-->
-            </li>
-            <li><a href="contact_us"><span class="home"></span>Contact Us</a></li>
+      <!-- Header Start-->
+	<nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index"><img src="/assets/aderlogik-logo.png" alt="Aderlogik"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="index">Home</a></li>
+			<li><a href="about_us">About</a></li>
+			<li><a href="services">Services</a></li>
+			<li><a href="portfolio">Work</a></li>
+			<li><a href="technology">Technology</a></li>
+            <li><a href="contact_us">Contact</a></li>
           </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	<!-- Header End-->
+
+    <%= yield %>
+		<footer>
+	<div class="container">
+    	<div class="row">
+       <div class="col-lg-4">
+          
+          <h3>ADERLOGIK</h3>
+          <p class="font-light">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, </p>
+          <p class="font-light">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, </p>
         </div>
         
-        <!-- Responsive Menu -->
+        <div class="col-lg-4">
+          
+          <h5>Sitemap</h5>
+          <p class="font-light">
+          	<ul>
+            	<li><a href="javasctip:void(0);">Home</a></li>
+                <li><a href="javasctip:void(0);">About</a></li>
+                <li><a href="javasctip:void(0);">Services</a></li>
+                <li><a href="javasctip:void(0);">Work</a></li>
+                <li><a href="javasctip:void(0);">Technology</a></li>
+                <li><a href="javasctip:void(0);">Contact</a></li>
+            </ul>
+          </p>
+        </div>
         
-        <form id="responsive-menu" action="#" method="post">
-          <select>
-            <option value="">Navigation</option>
-            <option value="index"><a href="index">Home</option>
-            <option value="about_us"><a href="about_us">About</a></option>
-            <option value="why_aderlogik"><a href="why_aderlogik">Why Aderlogik</a></option>
-            <option value="services"><a href="services">Services</a></option>
-            <option value="technology"><a href="technology">Technology</a></option>
-            <option value="contact_us"><a href="contact_us">Contact Us</a></option>
-          </select>
-        </form>
-      </div>
-    </header>
-  </div>
-</div>      
-      
-    <%= yield %>
+        <div class="col-lg-4">
+          <h5>Location</h5>
+          <p class="font-light">Seva Sanket-B, Row House No.13, <br>
+Bhadrapath Sector, Swami Samartha Nagar,<br>
+New CIDCO, Nashik<br>
+Maharashtra, India, 422009. <br><br>
+Email: <a href="mailto:info@aderlogik.com">info@aderlogik.com</a>
+</p>
+        </div>
+        
+        </div>
+    </div>
+    <div class="bottom-footer">
+    	<div class="container">
+        	<div class="row">
+            	<div class="col-md-6">&copy; Copyright 2016. All rights reserved.</div>
+                <div class="col-md-6 text-right">
+                	<a href="javascript:void(0);"><img src="/assets/facebook.png" width="28" height="27" alt="Facebook"></a> &nbsp;
+                    <a href="javascript:void(0);"><img src="/assets/linkdin.png" width="28" height="27" alt="Linkdin"></a> &nbsp;
+                    <a href="javascript:void(0);"><img src="/assets/google.png" width="28" height="27" alt="Google Plus"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
-<div class="blankSeparator1"></div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="/assets/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/assets/bootstrap.min.js"></script>
+     <script src="/assets/wow.min.js"></script>
+      <script src="/assets/owl.carousel.js"></script>
+  <script>
+    wow = new WOW(
+      {
+        animateClass: 'animated',
+        offset:       100,
+        callback:     function(box) {
+          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        }
+      }
+    );
+    wow.init();
+    document.getElementById('moar').onclick = function() {
+      var section = document.createElement('section');
+      section.className = 'section--purple wow fadeInDown';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+   <script>
+    $(document).ready(function() {
+      $("#owl-demo").owlCarousel({
+        autoPlay: 3000,
+        items : 5,
+        itemsDesktop : [1199,3],
+        itemsDesktopSmall : [979,3]
+      });
 
-<div id="footer">
-  <div class="container footer">
-    <div class="one_fourth">
-      <h3>Contact</h3>
-      <div id="tweets"></div>
-      <ul class="contactsidebar">
-        <li>Seva Sanket-B, Row House No.13,</li>
-        <li>Bhadrapath Sector, Swami Samartha Nagar,</li>
-        <li>New CIDCO, Nashik</li>
-        <li>Maharashtra, India, 422009.</li>
-        <li>Website: <a href="http://www.aderlogik.com" target="_blank" title="">http://www.aderlogik.com</a></li>
-        <li>Email: <a href="#" title="">info@aderlogik.com</a></li>
-      </ul>
-    </div>
-    <div class="one_fourth">
-      <h3>Aderlogik</h3>
-      <ul>
-        <li class="lines"><a href="index" title="">Home</a></li>
-        <li class="lines"><a href="about_us" class="">About Us</a></li>
-        <li class="lines"><a href="why_aderlogik" class="">Why Aderlogik</a></li>
-        <li class="lines"><a href="portfolio" class="">Portfolio</a></li>
-        <li class="lines"><a href="services" class=""> Services</a></li>
-        <li class="lines"><a href="technology" class="">Technologies</a></li>
-        <li class="lines"><a href="contact_us" class="">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="one_fourth lastcolumn">
-      <h3>About Aderlogik</h3>
-      <p>Aderlogik is Core, responsive, simple and clean firm with a lot attention to detail. Get it now!</p>
-      <p>Visit <a href="http://aderlogik.com/" rel="nofollow"></a> and find more interesting things to do.</p>
-    </div>
-  </div>
-  <!-- container ends here --> 
-</div>     
-<div id="copyright">
-  <div class="container">
-    <div class="eleven columns alpha">
-      <p class="copyright">&copy; Copyright 2016. &quot;Aderlogik IT solutions&quot; by <a href="http://www.anarieldesign.com/" rel="nofollow">Aderlogik</a>. All rights reserved.</p>
-    </div>
-    <div class="five columns omega">
-      <section class="socials">
-        <ul class="socials fr">
-          <li><a href="https://twitter.com/Ader_logik" target="_blank"><img src="/assets/twitter.png" class="poshytip" title="Twitter"  alt="" /></a></li>
-          <li><a href="https://www.facebook.com/aderlogik" target="_blank"><img src="/assets/facebook.png" class="poshytip" title="Facebook" alt="" /></a></li>
-          <li><a href="#"><img src="/assets/google.png" class="poshytip" title="Google" alt="" /></a></li>
-          <li><a href="#"><img src="/assets/dribbble.png" class="poshytip" title="Dribbble" alt="" /></a></li>
-        </ul>
-      </section>
-    </div>
-  </div>
-  <!-- container ends here --> 
-</div> 
+    });
+    </script>
 
   </body>
 </html>
