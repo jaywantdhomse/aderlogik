@@ -1,25 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-
-<meta charset="utf-8">
-<title>Aderlogik</title>
-<meta name="description" content="Place to put your description text">
-<meta name="author" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-
-<link rel="shortcut icon" href="/assets/logo25x20.png">
-<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
-<link rel="apple-touch-icon" sizes="72x72" href="/assets/apple-touch-icon-72x72.png">
-<link rel="apple-touch-icon" sizes="114x114" href="/assets/apple-touch-icon-114x114.png">
-
-<link href='http://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-<link href="/assets/style.css" rel="stylesheet">
-<link href="/assets/bootstrap.css" rel="stylesheet">
-<link href="/assets/animate.css" rel="stylesheet">
-<link href="/assets/owl.carousel.css" rel="stylesheet">
-<link href="/assets/owl.theme.css" rel="stylesheet">
-    
+    <title>Ader</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -27,7 +9,7 @@
   </head>
 
   <body>
-      <!-- Header Start-->
+  	<!-- Header Start-->
 	<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -41,104 +23,68 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index">Home</a></li>
-			<li><a href="about_us">About</a></li>
-			<li><a href="services">Services</a></li>
-			<li><a href="portfolio">Work</a></li>
+            <li class=""><a href="index">Home</a></li>
+			<li><a href="about">About</a></li>
+			<li><a href="service">Services</a></li>
+			<li><a href="work">Work</a></li>
 			<li><a href="technology">Technology</a></li>
-            <li><a href="contact_us">Contact</a></li>
+            <li><a href="contact">Contact</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </nav>
 	<!-- Header End-->
-
+  
     <%= yield %>
-		<footer>
-	<div class="container">
-    	<div class="row">
-       <div class="col-lg-4">
-          
-          <h3>ADERLOGIK</h3>
-          <p class="font-light">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, </p>
-          <p class="font-light">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, </p>
-        </div>
-        
-        <div class="col-lg-4">
-          
-          <h5>Sitemap</h5>
-          <p class="font-light">
-          	<ul>
-            	<li><a href="javasctip:void(0);">Home</a></li>
-                <li><a href="javasctip:void(0);">About</a></li>
-                <li><a href="javasctip:void(0);">Services</a></li>
-                <li><a href="javasctip:void(0);">Work</a></li>
-                <li><a href="javasctip:void(0);">Technology</a></li>
-                <li><a href="javasctip:void(0);">Contact</a></li>
-            </ul>
-          </p>
-        </div>
-        
-        <div class="col-lg-4">
-          <h5>Location</h5>
-          <p class="font-light">Seva Sanket-B, Row House No.13, <br>
-Bhadrapath Sector, Swami Samartha Nagar,<br>
-New CIDCO, Nashik<br>
-Maharashtra, India, 422009. <br><br>
-Email: <a href="mailto:info@aderlogik.com">info@aderlogik.com</a>
-</p>
-        </div>
-        
-        </div>
-    </div>
-    <div class="bottom-footer">
-    	<div class="container">
-        	<div class="row">
-            	<div class="col-md-6">&copy; Copyright 2016. All rights reserved.</div>
-                <div class="col-md-6 text-right">
-                	<a href="javascript:void(0);"><img src="/assets/facebook.png" width="28" height="27" alt="Facebook"></a> &nbsp;
-                    <a href="javascript:void(0);"><img src="/assets/linkdin.png" width="28" height="27" alt="Linkdin"></a> &nbsp;
-                    <a href="javascript:void(0);"><img src="/assets/google.png" width="28" height="27" alt="Google Plus"></a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="/assets/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/assets/bootstrap.min.js"></script>
-     <script src="/assets/wow.min.js"></script>
-      <script src="/assets/owl.carousel.js"></script>
-  <script>
-    wow = new WOW(
-      {
-        animateClass: 'animated',
-        offset:       100,
-        callback:     function(box) {
-          console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-        }
-      }
-    );
-    wow.init();
-    document.getElementById('moar').onclick = function() {
-      var section = document.createElement('section');
-      section.className = 'section--purple wow fadeInDown';
-      this.parentNode.insertBefore(section, this);
-    };
-  </script>
-   <script>
-    $(document).ready(function() {
-      $("#owl-demo").owlCarousel({
-        autoPlay: 3000,
-        items : 5,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,3]
-      });
-
-    });
-    </script>
-
+    <footer>
+		<div class="container">
+			<div class="row">
+		   <div class="col-lg-4">
+		      
+		      <h3>ADERLOGIC</h3>
+		      <p class="font-light">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, </p>
+		      <p class="font-light">Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, </p>
+		    </div>
+		    
+		    <div class="col-lg-4">
+		      
+		      <h5>Sitemap</h5>
+		      <p class="font-light">
+		      	<ul>
+		        	<li><a href="javasctip:void(0);">Home</a></li>
+		            <li><a href="javasctip:void(0);">About</a></li>
+		            <li><a href="javasctip:void(0);">Services</a></li>
+		            <li><a href="javasctip:void(0);">Work</a></li>
+		            <li><a href="javasctip:void(0);">Technology</a></li>
+		            <li><a href="javasctip:void(0);">Contact</a></li>
+		        </ul>
+		      </p>
+		    </div>
+		    
+		    <div class="col-lg-4">
+		      <h5>Location</h5>
+		      <p class="font-light">Seva Sanket-B, Row House No.13, <br>
+	Bhadrapath Sector, Swami Samartha Nagar,<br>
+	New CIDCO, Nashik<br>
+	Maharashtra, India, 422009. <br><br>
+	Email: <a href="mailto:info@aderlogik.com">info@aderlogik.com</a>
+	</p>
+		    </div>
+		    
+		    </div>
+		</div>
+		<div class="bottom-footer">
+			<div class="container">
+		    	<div class="row">
+		        	<div class="col-md-6">&copy; Copyright 2016. All rights reserved.</div>
+		            <div class="col-md-6 text-right">
+		            	<a href="javascript:void(0);"><img src="/assets/facebook.png" width="28" height="27" alt="Facebook"></a> &nbsp;
+		                <a href="javascript:void(0);"><img src="/assets/linkdin.png" width="28" height="27" alt="Linkdin"></a> &nbsp;
+		                <a href="javascript:void(0);"><img src="/assets/google.png" width="28" height="27" alt="Google Plus"></a>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+	</footer>
   </body>
 </html>
